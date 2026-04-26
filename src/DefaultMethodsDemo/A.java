@@ -5,7 +5,7 @@ public interface A {
         System.out.println("Hello from A interface");
     }
 }
-interface B {
+interface B  {
     default void sayHello(){
         System.out.println("Hello from B interface");
     }
