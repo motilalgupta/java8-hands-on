@@ -24,7 +24,7 @@ public class StudentTest {
         String course = "BCA";              // instance variable
         @Override
         public String getCourse() {
-            System.out.println(this.course); // Can be accessible
+            System.out.println(this.course);    // Can be accessible
             return "IT";
         }
     };
