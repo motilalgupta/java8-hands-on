@@ -11,3 +11,6 @@ public class isEquals {
         System.out.println(predicate.test("rahul"));        // returns true
     }
 }
+
+
+
