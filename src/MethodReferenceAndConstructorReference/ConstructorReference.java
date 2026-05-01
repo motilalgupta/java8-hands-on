@@ -4,6 +4,8 @@ import Predicte.Student;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.function.Function;
+import java.util.function.Supplier;
 import java.util.stream.Collectors;
 
 public class ConstructorReference {
@@ -35,5 +37,11 @@ public class ConstructorReference {
         List<ConstructorReference> students = names.stream().map(ConstructorReference::new)
                 .collect(Collectors.toList());
         System.out.println(students);
+
+        Supplier<String> supplier = String::new;
+        String str = supplier.get();                    // Doesn't take any input but Does return
+
+        Function<String,String> function = String::new;
+        System.out.println(function.apply("hello"));        // Takes and return as well
     }
 }
